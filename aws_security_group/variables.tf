@@ -11,6 +11,9 @@ variable "vpc_id" {
 }
 
 variable "allow_ports" {
-  //  type     = list
   default = ["80", "443"]
+}
+
+variable "cidr" {
+  default = ["0.0.0.0/0"]
 }
