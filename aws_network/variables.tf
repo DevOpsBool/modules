@@ -1,4 +1,4 @@
-variable "vpc_cidr" {
+variable "cidr" {
   default = "10.100.0.0/16"
 }
 
@@ -6,7 +6,7 @@ variable "env" {
   default = "test"
 }
 
-variable "public_subnet_cidrs" {
+variable "public_subnets" {
   default = [
     "10.100.1.0/24",
     "10.100.2.0/24",
@@ -14,7 +14,7 @@ variable "public_subnet_cidrs" {
   ]
 }
 
-variable "private_subnet_cidrs" {
+variable "private_subnets" {
   default = [
     "10.0.11.0/24",
     "10.0.22.0/24",
