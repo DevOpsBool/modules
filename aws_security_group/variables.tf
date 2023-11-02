@@ -15,5 +15,5 @@ variable "allow_ports" {
 }
 
 variable "cidr" {
-  default = ["0.0.0.0/0"]
+  default = "0.0.0.0/0"
 }
